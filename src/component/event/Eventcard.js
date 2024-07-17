@@ -19,7 +19,17 @@ function Eventcard() {
                                 <a href={eventdata.linkHref} className={`d-block overflow-hidden ${esthercss.thumbImgE}`}><img src={eventdata.imageSrc} alt={eventdata.alt} className="d-block img-fluid" /></a>
                                 <a href={eventdata.linkHref} className=" d-block ">
                                     <strong className={`${esthercss.textTitleE} d-block mb-3`}>{eventdata.title}</strong>
-                                    <span className="d-block">{eventdata.description}
+                                    <span className="d-block">{
+                                    eventdata.description.split('|').map((v, i)=>{
+                                        return(
+                                            <>
+                                              { i > 0 ? <br></br> : '' }
+                                              {v}
+
+                                            </>
+                                        )
+                                    })
+                                    }
                                     </span>
                                     <i className={`${esthercss.eventArrowE} d-block`}>
                                         <svg className={`${esthercss.gray}`} width="42" height="30" viewBox="0 0 42 30" fill="none" >
