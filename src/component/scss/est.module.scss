@@ -1,0 +1,203 @@
+$mainColor : #FFEBB7;
+$subColorBlue : #B5E1F9;
+$subColorPurple : #D1CFFF;
+$subColorPink : #F9D6D6;
+$subColorGreen : #85BD91;
+$subColorSoftBlue : #CDE6F9;
+$pointColorPink : #FF7682;
+$pointColorOrange : #FF9268;
+$pointColorPurple : #A374C8;
+$pointColorGreen : #8AE89F;
+$pointColorBlue : #77C5FF;
+$fontColorBlack : #333333;
+$fontColorGray : #989797;
+$fontColorSoftGray : #F2F2F2;
+$fontColorDarkBeige : #B2A569;
+
+.eventE{
+    
+    .titleAreaE:before{
+
+        content:””;
+        
+        display:block;
+        
+        position:absolute;
+        
+        top:-2rem;
+        
+        left:-2rem;
+        
+        right:-2rem;
+        
+        bottom:-2rem;
+        
+        background-color: $mainColor;
+        
+        }
+      
+        .containerE
+        {  letter-spacing: -0.085rem;
+          
+          h3{
+            font-size: 30px;
+            font-weight: bold;
+          }
+        
+          .LearnMoreE{
+          width: 97px;
+          height: 37px;
+          display: block;
+          background-color: black;
+          border-radius: 20px;
+          line-height: 37px;
+          text-align: center;
+          color:white;
+          font-size: 14px !important; 
+          font-weight: 600 !important;  
+      
+        }
+  
+        }
+        .beforeRoundE{
+          position: relative;
+        }
+        .beforeRoundE:before{
+          position: absolute;
+          content: "";
+          left:0; top:-30px;
+          width: 468px;
+          height: 568px;
+          background-color: #FFEBB7;
+          border-radius: 20px; /* 둥근 사각형 모서리를 위한 값 */
+          padding: 20px; /* 텍스트와 경계 사이의 간격을 조절하기 위해 사용 */
+        }
+  
+        .titleAreaE{
+          p{
+            font-size: 24px;
+          }      
+          margin: 0;
+         
+        }
+  
+  
+  
+        .eventListE{
+          // transform: translate(-5%, 10%);
+          @media (max-width:768px) {
+            transform: translate(0,0);
+          }
+          
+          margin-top: 30px;
+          li{
+              position: relative;
+              border-radius: 10px;
+              max-width: 100%;
+              height: 450px;
+              box-shadow: 0 4px 4px rgba(0,0,0,0.25);; /* 가로, 세로, 흐림 정도, 색상 */ 
+             
+              
+              span{
+                font-size: 14px;
+                margin: 1.3rem;
+              }
+  
+              .textTitleE{
+                font-weight: bold;
+                font-size: 20px;
+                margin: 1.3rem ;
+              
+              }
+              &.eventFirstE{
+                .thumbImgE{
+  
+                  img{ 
+  
+  
+                    margin-top: -6rem;
+                  }
+                }
+                
+              }
+  
+              @keyframes arrowAnimationBefore {
+                from {
+                  margin-right: 0;
+                  opacity: 1;
+                }
+                to {
+                    margin-right: -42px;
+                    opacity: 0;
+                }
+              }
+              @keyframes arrowAnimationAfter {              
+                from {
+                  right: 42px;
+                  opacity: 0;
+                }
+                to {
+                    right: 0;
+                    opacity: 1;
+                }
+              }
+              .eventArrowE{
+                position: absolute;
+                bottom: 1rem;
+                right: 1rem; 
+                width: 42px;
+                height: 30px;
+                overflow: hidden;
+                svg{
+                  position: absolute;
+                  right: 0;
+                  height: auto !important;
+                  &.gray {                  
+                    transition: opacity 0.2s, margin-right 0.2s;
+                  }
+                  &.yellow {
+                    opacity: 0;
+                    right: 42px;
+                    transition: opacity 0.2s, right 0.2s;
+                  }
+                }
+                &:hover{
+                  svg {
+                    &.gray {
+                      animation: arrowAnimationBefore 0.3s forwards;
+                    }
+                    &.yellow {
+                      animation: arrowAnimationAfter 0.3s forwards 0.3s;
+                    }
+                  }
+                }
+               }
+          
+  
+             &.eventSecondE{
+               img{
+                height: 224px;
+                @media (max-width:768px) {
+                  width:100%;
+                 
+                  
+                }
+  
+              }
+             } 
+             }
+            a{
+              color:#333333;
+              text-decoration: none;
+              list-style: none;
+              width: 308px;
+              height: 224px;
+              @media (max-width:768px) {
+                width:100%;
+                height:auto;
+                
+              }
+  
+            }
+          }
+}
