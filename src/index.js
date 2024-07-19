@@ -11,7 +11,7 @@ import 'swiper/css';
 import Mrc from './Mrcmain';
 import Hd from './component/Hd'
 import Ft from './component/Ft'
-// import Quick from './component/Quick';
+import Quick from './component/Quick';
 import Pageprepare from './component/subpage/Pageprepare';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -22,8 +22,8 @@ root.render(
             <Route path="/" element={<Mrc />} />
             <Route path='*' element={<Pageprepare />} />
         </Routes>
-        <Mrc />
-        {/* <Quick /> */}
+        
+        <Quick />
         <Ft />
     </BrowserRouter>
 );
