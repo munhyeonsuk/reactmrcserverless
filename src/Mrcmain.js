@@ -4,7 +4,7 @@ import EventE from './component/EventE';
 function Mrc(){
     return(
         <>
-            <Hd></Hd>
+        
             <EventE></EventE>
             
         </>

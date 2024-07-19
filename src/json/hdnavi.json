@@ -1,0 +1,55 @@
+
+[
+    {
+      "link": {
+        "href": "/pageprepare",
+        "text": "경주 소개"
+      },
+      "submenu": {
+        "items": [
+          { "href": "/pageprepare", "text": "역사 및 소개"},
+          { "href": "/pageprepare", "text": "지역 특산품"}
+        ]
+      }
+    },
+    {
+      "link": {
+         "href": "/pageprepare",
+        "text": "여행 정보"
+      },
+      "submenu": {
+        "items": [
+          { "href": "/pageprepare", "text": "관광지"},
+          { "href": "/pageprepare", "text": "음식 및 카페"},
+          { "href": "/pageprepare", "text": "축제"},
+          { "href": "/pageprepare", "text": "추천 코스"},
+          { "href": "/pageprepare", "text": "여행 후기"}
+        ]
+      }
+    },
+    {
+      "link": {
+         "href": "/pageprepare",
+        "text": "예약 및 문의"
+      },
+      "submenu": {
+        "items": [
+          { "href": "/pageprepare", "text": "숙소 예약"},
+          { "href": "/pageprepare", "text": "패키지 여행 예약"},
+          { "href": "/pageprepare", "text": "문의사항"},
+          { "href": "/pageprepare", "text": "자주 묻는 문의"}
+        ]
+      }
+    },
+    {
+      "link": {
+         "href": "/pageprepare",
+        "text": "이벤트"
+      },
+      "submenu": {
+        "items": [
+          { "href": "/pageprepare", "text": "진행중인 이벤트"}
+        ]
+      }
+    }
+  ]

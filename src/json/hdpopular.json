@@ -1,0 +1,16 @@
+{
+    "list1": [
+      {"text": "관광지",  "href": "/pageprepare"},
+      {"text": "카페",  "href": "/pageprepare"},
+      {"text": "패키지 여행 예약",  "href": "/pageprepare"},
+      {"text": "추천 코스",  "href": "/pageprepare"},
+      {"text": "맛집",  "href": "/pageprepare"}
+    ],
+    "list2": [
+      {"text": "황남빵",  "href": "/pageprepare"},
+      {"text": "경주월드",  "href": "/pageprepare"},
+      {"text": "호텔",  "href": "/pageprepare"},
+      {"text": "한복 대여",  "href": "/pageprepare"},
+      {"text": "야경",  "href": "/pageprepare"}
+    ]
+  }
